@@ -1,0 +1,104 @@
+*{
+  margin:0px;
+  box-sizing:border-box;
+}
+
+nav{  
+  display:flex;
+  position:sticky;
+  top:0;
+  border:2px solid red;
+  justify-content:center;
+  align-items:center;
+  height:150px;
+  background:black;
+}
+
+#logo{
+  position:fixed;
+  width:220px;
+  border-radius:50%;
+  left:20px;
+  top:0;
+  animation:spin 4s linear infinite;
+}
+
+#hd{
+  font-size: 60px;
+  text-align:center;
+  border:1px solid blue;
+  color:white;
+}
+
+#main{
+  display:flex;
+  flex-direction:column;
+  height:600px;
+  border:5px solid black;
+  justify-content:space-evenly;
+/*   align-items:center; */
+}
+
+#fm{
+    width:600px;
+    height:400px;
+    border:1px solid red;
+ }
+
+#fm_h
+{
+  font-size:35px;
+  background:none;
+  text-align:center;
+  border:1px solid black;
+  padding:20px;
+}
+
+#form{
+/*   display:flex; */
+/*   border:1px solid blue; */
+  width:100%;
+
+/*   justify-content:center; */
+  
+}
+
+#lb{
+  font-size:25px;
+  padding:5px;
+  text-align:center;
+}
+
+#ans
+{
+   text-align:center;
+     font-size:25px;
+  border:1px solid green;
+}
+
+
+textarea{
+outline:none;
+}
+
+#btn{
+  padding:2px 5px 2px 5px;
+  font-size:20px;
+}
+
+#cont
+{
+  border:1px solid red;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  width:auto;
+  height:100%;
+}
+
+/* animation 1 */
+@keyframes spin { 100% { transform:rotateY(360deg); } }
+
+
+
