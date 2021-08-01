@@ -1,47 +1,48 @@
 <!doctype html>
 <html>
-    <head>
-      <title>
-        Fake News Detector
-      </title>
-      
-       <link rel="stylesheet" href="../static/styles.css">
-      
-  </head>
-  
-  <body>
-    
-    <nav>
-      <img src="https://i.ibb.co/VqQ1YnS/Fake-news-on-internet-in-modern-digital-age-conceptual-illustration-with-text-overlaying-hexadecimal.jpg" alt="Fake-news-on-internet-in-modern-digital-age-conceptual-illustration-with-text-overlaying-hexadecimal" id='logo' />
-      <div id='hd'>Fake News Detector</div>
-    </nav>
-    
-    <main>
-      <div id="main">
-        <div id="fm_h">
-          Fake or Real??  We Got You
-        </div>
-        <div id="">
-         <form action="{{url_for('predict')}}" method="post" method="POST">
-           <div id="cont">
 
-             <div id='lb'><label for='i1'>Paste the article here</label></div> 
-             <div><textarea id="i1" name="i1" cols="50" rows="10"></textarea></div>
-             <div><button type="submit" id="btn">Detect Now !</button></div>
-           
-           </div>
-          </form>
-        </div>
-        
-        <div id="ans">{{prediction_text}}
-        </div>
+<head>
+  <title>
+    Fake News Detector
+  </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <img src="https://i.ibb.co/VqQ1YnS/Fake-news-on-internet-in-modern-digital-age-conceptual-illustration-with-text-overlaying-hexadecimal.jpg" alt="Fake-news-on-internet-in-modern-digital-age-conceptual-illustration-with-text-overlaying-hexadecimal" id='logo' />
+    <div id='hd'>Fake News Detector</div>
+  </nav>
+
+  <main>
+    <div id="main">
+      <div id="fm_h">
+        Fake or Real?? We Got You
+      </div>
+      <div id="form" class="">
+        <form action="{{url_for('predict')}}" method="post" method="POST">
+          <div id="cont">
+
+            <div id='lb'><label for='i1'>Paste the article here</label></div>
+            <div><textarea id="i1" name="i1" cols="50" rows="10"></textarea></div>
+            <div><button type="submit" id="btn" class="btn-r">Detect Now !</button></div>
+
+          </div>
+        </form>
+      </div>
+
+      <div id="ans">{{predict_}}
+      </div>
   </main>
-    </main>
-    
-    <footer>
-      
-    </footer>
-    
-  </body>
-    
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+
 </html>
