@@ -19,6 +19,8 @@
 
 body {
   background: linear-gradient(180deg, #242124, #1b1b1b);
+  height:100vh;
+  width:100vw;
 }
 
 nav {
@@ -28,6 +30,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 130px;
+  width:100%;
   background: black;
 }
 
@@ -60,7 +63,6 @@ nav {
 }
 
 #form {
-  width: 100%;
   height: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -135,14 +137,14 @@ form {
 }
 
 #pred {
-  height: 100vw;
+  height: 100vh;
   width: 100vw;
   background: rgba(255, 255, 255, 0.5);
   position: fixed;
   top: 0;
   z-index:100;
   visibility:hidden;
-  display: flex;
+display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -186,7 +188,6 @@ i:hover {
 }
 
 .sh
-
 {
 	visibility:visible !important;
 }
@@ -197,6 +198,389 @@ i:hover {
     transform: rotateY(360deg);
   }
 }
+
+
+
+@media (max-width:750px)
+{
+
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background: black;
+}
+
+#logo {
+  position: fixed;
+  width: 100px;
+  border-radius: 50%;
+  left: 20px;
+  top: 5px;
+  animation: n 3s linear infinite;
+}
+
+#hd {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-top:100px;
+}
+
+#fm {
+  width: 400px;
+  height: 380px;
+  /*     border:1px solid red; */
+}
+
+#form {
+  height: 380px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#lb {
+  font-size: 22px;
+  width: 98%;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  background: #004953;
+}
+/*
+#ans {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}*/
+
+textarea {
+  outline: none;
+  background: linear-gradient(180deg, #242124, #1b1b1b);
+  color: white;
+  border: 1px dotted black;
+  width:300px;
+  margin-top:20px;
+    max-width: 300px; 
+    max-height: 180px;
+
+}
+
+form {
+  height:100%;
+}
+
+#cont {
+  border-radius: 5px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 100%;
+  margin: auto;
+}
+
+.btn-r {
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Recursive", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+#btn {
+  border: 1px solid #ed2d5d;
+  color: #ed2d5d;
+  background: inherit;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+#btn:hover {
+  border: none;
+  color: white;
+  background-color: #ed2d5d;
+  box-shadow: 0px 0px 10px 1px #ed2d5d, 0px 0px 30px 2px #ed2d5d,
+    0px 0px 200px 5px #ed2d5d;
+}
+
+
+
+
+
+
+
+
+#pred {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  z-index:100;
+  visibility:hidden;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  position: absolute;
+  top:200px;
+  height: 300px;
+  width: 400px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#close {
+  position: absolute;
+  right: 0;
+  margin: 0 5px 5px 0;
+}
+
+#pop-up {
+  color: white;
+  font-size: 40px;
+  background: black;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  margin: auto;
+}
+
+i {
+  color: grey;
+  font-size: 25px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.sh
+{
+visibility:visible !important;
+}
+
+}
+
+
+
+
+
+
+@media(max-width:650px)
+{
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background: black;
+}
+
+#logo {
+  position: fixed;
+  width: 100px;
+  border-radius: 50%;
+  left: 20px;
+  top: 5px;
+  animation: n 3s linear infinite;
+}
+
+#hd {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  margin-top:100px;
+}
+
+#fm {
+  width: 400px;
+  height: 380px;
+  /*     border:1px solid red; */
+}
+
+#form {
+  height: 380px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#lb {
+  font-size: 22px;
+  width: 98%;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  background: #004953;
+}
+/*
+#ans {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}*/
+
+textarea {
+  outline: none;
+  background: linear-gradient(180deg, #242124, #1b1b1b);
+  color: white;
+  border: 1px dotted black;
+  width:300px;
+  margin-top:20px;
+    max-width: 300px; 
+    max-height: 180px;
+
+}
+
+form {
+  height:100%;
+}
+
+#cont {
+  border-radius: 5px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 100%;
+  margin: auto;
+}
+
+.btn-r {
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Recursive", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+#btn {
+  border: 1px solid #ed2d5d;
+  color: #ed2d5d;
+  background: inherit;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+#btn:hover {
+  border: none;
+  color: white;
+  background-color: #ed2d5d;
+  box-shadow: 0px 0px 10px 1px #ed2d5d, 0px 0px 30px 2px #ed2d5d,
+    0px 0px 200px 5px #ed2d5d;
+}
+
+
+
+
+
+
+
+
+#pred {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  z-index:100;
+  visibility:hidden;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  position: absolute;
+  top:200px;
+  height: 300px;
+  width: 400px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#close {
+  position: absolute;
+  right: 0;
+  margin: 0 5px 5px 0;
+}
+
+#pop-up {
+  color: white;
+  font-size: 40px;
+  background: black;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  margin: auto;
+}
+
+i {
+  color: grey;
+  font-size: 25px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.sh
+{
+visibility:visible !important;
+}
+
+}
+
 
   </style>
 </head>
