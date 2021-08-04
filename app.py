@@ -6,7 +6,6 @@ app=Flask(__name__)
 model=pickle.load(open('model.pkl','rb'))
 
 #default home page
-
 @app.route('/')
 def Home():
 	return render_template('index.html')
@@ -21,8 +20,8 @@ def predict():
 	
 	output=model[1].predict(temp)
 	print(output[0])
-
-	return render_template('index.html', prediction_text='{} '.format(output[0]))
+	return render_template('index.html', prediction_text='{} '.format(output[0]),show="sh")
 	
 if __name__=="__main__":
     app.run(debug=True)
+
